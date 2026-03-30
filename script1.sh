@@ -8,7 +8,7 @@
 # ============================================================
 
 # --- Variables ---
-STUDENT_NAME="[Your Name]"         # Replace with your actual name
+STUDENT_NAME="Rishi Raj"         # Replace with your actual name
 SOFTWARE_CHOICE="Apache HTTP Server"  # Chosen OSS project
 
 # --- Gather system information using command substitution $() ---

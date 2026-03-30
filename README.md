@@ -4,19 +4,19 @@
 
 | Field | Details |
 |---|---|
-| **Student Name** | [Your Name] |
-| **Roll Number** | [Your Roll Number] |
+| **Student Name** | [Rishi Raj] |
+| **Roll Number** | [24BAI10118] |
 | **Course** | Open Source Software (NGMC) |
 | **Chosen Software** | Apache HTTP Server |
 | **License** | Apache License 2.0 |
-| **Repository** | oss-audit-[rollnumber] |
+| **Repository** | oss-audit-[24BAI10118] |
 
 ---
 
 ## Repository Structure
 
 ```
-oss-audit-[rollnumber]/
+oss-audit-[24BAI10118]/
 │
 ├── README.md                          ← You are here
 ├── script1_system_identity.sh         ← System welcome screen
@@ -42,36 +42,30 @@ oss-audit-[rollnumber]/
 
 ---
 
-## Step 1 — Clone the Repository
+## Step 1: Create a folder for your project
+mkdir ~/OSS-Project-Rishi && cd ~/OSS-Project-Rishi
 
-```bash
-git clone https://github.com/[your-github-username]/oss-audit-[rollnumber].git
-cd oss-audit-[rollnumber]
-```
+## Step 2: Create each script file (paste each script's content into nano, then Ctrl+O to save, Ctrl+X to exit)
+nano script1_system_identity.sh
+nano script2_package_inspector.sh
+nano script3_disk_auditor.sh
+nano script4_log_analyzer.sh
+nano script5_manifesto.sh
 
----
+## Step 3: Make all scripts executable
+chmod +x script1_system_identity.sh script2_package_inspector.sh script3_disk_auditor.sh script4_log_analyzer.sh script5_manifesto.sh
 
-## Step 2 — Make All Scripts Executable
+## Step 4: Install LibreOffice (needed for Script 2)
+sudo apt update && sudo apt install libreoffice -y
 
-Run this once after cloning. Without this step, Linux will refuse to run the scripts.
+## Step 5: Run each script
+./script1_system_identity.sh
+./script2_package_inspector.sh
+./script3_disk_auditor.sh
+./script4_log_analyzer.sh        # auto-generates sample log
+./script5_manifesto.sh           # will ask you 3 questions
 
-```bash
-chmod +x script1_system_identity.sh
-chmod +x script2_package_inspector.sh
-chmod +x script3_disk_permission_auditor.sh
-chmod +x script4_log_analyzer.sh
-chmod +x script5_manifesto_generator.sh
-```
-
-Or do all five at once:
-
-```bash
-chmod +x *.sh
-```
-
----
-
-## Step 3 — Install Apache (Required for Scripts 2, 3, 4)
+## Step 6 — Install Apache (Required for Scripts 2, 3, 4)
 
 **Ubuntu / Debian:**
 ```bash
